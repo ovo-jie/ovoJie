@@ -1,0 +1,19 @@
+{{each contenlist as value i}}
+        <li>
+            <div class="user">
+                <div class="u-img">
+                    <a href="#"><img src={{value.profile_image}} width="30px" height="30px" alt=""></a>
+                </div>
+                <div class="u-txt">
+                    <a href="#">{{value.name}}</a>
+                    <span class="u-time">{{value.create_time}}</span>
+                </div>
+            </div>
+
+            <div class="c-list">
+                <p>{{value.text}}</p>
+                <!--视频-->
+                <video src={{value.video_uri}}></video>
+            </div>
+        </li>
+{{/each}}

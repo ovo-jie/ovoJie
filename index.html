@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="CSS/base.css">
+    <script src="JS/jquery-1.11.1.min.js"></script>
+    <script src="JS/template.js"></script>
+    <script type="text/html" id="video-key">
+        {{each contentlist as value i}}
+        <li class="content-contain">
+            <div class="user">
+                <div class="u-img">
+                    <a href="#"><img src={{value.profile_image}} width="30px" height="30px" alt=""></a>
+                </div>
+                <div class="u-txt">
+                    <a href="#">{{value.name}}</a>
+                    <span class="u-time">{{value.create_time}}</span>
+                </div>
+            </div>
+
+            <div class="c-list">
+                <p>{{value.text}}</p>
+                <!--视频-->
+                <video src={{value.video_uri}} width="566px" height="360px " controls="controls"></video>
+            </div>
+        </li>
+        {{/each}}
+    </script>
+    <script type="text/html" id="photo-key">
+        {{each contentlist as value i}}
+        <li class="content-contain">
+            <div class="user">
+                <div class="u-img">
+                    <a href="#"><img src={{value.profile_image}} width="30px" height="30px" alt=""></a>
+                </div>
+                <div class="u-txt">
+                    <a href="#">{{value.name}}</a>
+                    <span class="u-time">{{value.create_time}}</span>
+                </div>
+            </div>
+
+            <div class="c-list">
+                <p>{{value.text}}</p>
+                <img src="{{value.image0}}" width="566px" alt="">
+            </div>
+        </li>
+        {{/each}}
+</script>
+    <script type="text/html" id="duanzi-key">
+        {{each contentlist as value i}}
+        <li class="content-contain">
+            <div class="user">
+                <div class="u-img">
+                    <a href="#"><img src={{value.profile_image}} width="30px" height="30px" alt=""></a>
+                </div>
+                <div class="u-txt">
+                    <a href="#">{{value.name}}</a>
+                    <span class="u-time">{{value.create_time}}</span>
+                </div>
+            </div>
+
+            <div class="c-list">
+                <p>{{value.text}}</p>
+            </div>
+        </li>
+        {{/each}}
+    </script>
+    <script type="text/html" id="voice-key">
+        {{each contentlist as value i}}
+        <li class="content-contain">
+            <div class="user">
+                <div class="u-img">
+                    <a href="#"><img src={{value.profile_image}} width="30px" height="30px" alt=""></a>
+                </div>
+                <div class="u-txt">
+                    <a href="#">{{value.name}}</a>
+                    <span class="u-time">{{value.create_time}}</span>
+                </div>
+            </div>
+
+            <div class="c-list">
+                <p>{{value.text}}</p>
+                <audio src={{value.voice_uri}} controls="controls">
+                </audio>
+            </div>
+        </li>
+        {{/each}}
+    </script>
+    <script src="JS/base2.js"></script>
+</head>
+<body>
+<div class="header ">
+    <div class="w top">
+        <div class="header-logo">
+            <img src="http://wimg.spriteapp.cn/huodong/logo_new.png" alt="百思不得姐" title="百思不得姐官网">
+        </div>
+        <div class="header-nav">
+            <ul>
+                <li class="all"><a href="#">全部</a></li>
+                <li class="video"><a href="#">视频</a></li>
+                <li class="photo"><a href="#">图片</a></li>
+                <li class="duanzi"><a href="#">段子</a></li>
+                <li class="voice"><a href="#">声音</a></li>
+                <li><a href="#">排行</a></li>
+                <li><a href="#">美女</a></li>
+            </ul>
+        </div>
+        <div class="header-user">
+            <a href="#">登录</a>
+            <em>|</em>
+            <a href="#">注册</a>
+        </div>
+    </div>
+</div>
+<div class="content ">
+    <div class="w show">
+        <div class="left contain ">
+            <div class="content-nav ">
+                <ul>
+                    <li><a href="#">精华</a></li>
+                    <li><a href="#">最新</a></li>
+                    <li><a href="#">穿越</a></li>
+                </ul>
+            </div>
+            <div class="content-list">
+                <ul id="content-list-ul">
+                    <!--用户信息-->
+                    <li>
+                        <div class="user">
+                            <div class="u-img">
+                                <a href="#"><img src="http://mpic.spriteapp.cn/profile/large/2016/03/01/56d5060ed0b97_mini.jpg" width="30px" height="30px" alt=""></a>
+                            </div>
+                            <div class="u-txt">
+                                <a href="#">韩41</a>
+                                <span class="u-time">2017-02-06 20:34:03</span>
+                            </div>
+                        </div>
+
+                        <div class="c-list">
+                            <p>这首歌足让我们排了7个小时，虽然很难唱，但是真的超级喜欢(^_^)</p>
+                            <!--视频-->
+                            <video src="http://mpic.spriteapp.cn/crop/566x360/picture/2017/0204/5895916bbf11b__b.jpg"></video>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-footer">
+    <div class="w content-page">
+        <div class="left content-page-go">
+            <a href="#" class="content-footer-page content-page-choose">1</a>
+            <a href="#" class="content-footer-page">2</a>
+            <a href="#" class="content-footer-page">3</a>
+            <a href="#" class="content-footer-page">4</a>
+            <a href="#" class="content-footer-page">5</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

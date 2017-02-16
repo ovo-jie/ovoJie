@@ -1,0 +1,142 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+select, input { vertical-align:middle; }
+select, input, textarea { font-size:12px; margin:0; }
+textarea { resize:none; } /*防止拖动*/
+img {border:0; vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙*/
+table { border-collapse:collapse; }
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+.w{
+    width: 1240px;
+    margin:0 auto;
+}
+.left{
+    width:640px;
+}
+.header{
+    background-color: rgb(229,5,65);
+}
+.top{
+    height: 60px;
+    line-height: 60px;
+
+}
+.header-logo,.header-nav,.header-user{
+    float: left;
+    font-size:16px;
+}
+.header-logo,.header-nav,.header-user a:link,.header-logo,.header-nav,.header-user a:visited{
+    color: white;
+    text-decoration: none;
+
+}
+.header-nav>ul{
+    list-style: none;
+    margin:0 200px 0 50px;
+}
+.header-nav>ul>li{
+    width:70px;
+    float: left;
+}
+.header-nav>ul>li a:link,.header-nav>ul>li a:visited{
+    color: white;
+    text-decoration: none;
+}
+.header{
+    margin-bottom: 20px;
+}
+/*内容*/
+.contain{
+    padding:0 20px 0 20px;
+    border: 1px solid lightgray;
+}
+.content-nav{
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    height:50px;
+    line-height:50px;
+}
+.content-nav>ul{
+    padding:0;
+    height:20px;
+
+}
+.content-nav>ul>li{
+    width:50px;
+    float: left;
+    margin:0 auto;
+}
+.content-list .user{
+    height: 50px;
+    line-height: 50px;
+}
+.content-list .u-img{
+    width: 30px;
+    float: left;
+}
+
+.content-list .u-txt a{
+    margin-left: 10px;
+    float: left;
+    color: #000;
+    text-decoration: none;
+}
+.u-txt a:hover{
+    color: #000;
+}
+.content-list .u-txt span{
+    float: right;
+}
+#content-list-ul li{
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding:0 0 20px 0;
+}
+.content .content-nav>ul>li>a{
+    color: #000;
+    text-decoration: none;
+}
+
+.content .content-nav>ul>li> a:hover{
+    color: red;
+}
+.content-list .c-list{
+    padding-top: 10px;
+}
+.content-list .c-list>p{
+    margin-bottom: 20px;
+}
+.content-page-go{
+    margin:0 auto;
+}
+.content-page-go>a{
+    display: inline-block;
+    width: 30px;
+    height:30px;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    line-height:30px;
+    color: black;
+    border:1px solid lightgray;
+}
+.content-page-go>a:first-child{
+    background-color: rgb(229,5,65);
+    color:white;
+}
+.content-page-go> a:hover{
+    background-color: rgb(229,5,65);
+    color: white;
+}
+
+
+
